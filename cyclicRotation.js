@@ -12,8 +12,22 @@
 //
 //that, given a zero-indexed array A consisting of N integers and an integer K, returns the array A rotated K times.
 //
-//    For example, given array A = [3, 8, 9, 7, 6] and K = 3, the function should return [9, 7, 6, 3, 8].\
+//    For example, given array A = [3, 8, 9, 7, 6] and K = 3, the function should return [9, 7, 6, 3, 8].
 
-function cyclicRotation(arr, rotation){
-    //Your code here...
+//make an array
+//we will need a for loop inside of the function
+//we will need a .push() and .pop(), .unshift() how to manipulate arrays
+//
+
+var array1 = [2, 4, 6, 8, 10];
+var k = 2;
+
+function cyclicRotation(arr, rotation) {
+    for (var i=0; i <k; i++) {
+    var drop = array1.pop();
+    array1.unshift(drop);
+      console.log(array1);
+    } 
 }
+  
+cyclicRotation(array1, k);  
