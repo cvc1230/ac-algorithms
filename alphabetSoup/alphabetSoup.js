@@ -31,9 +31,15 @@ Bonus:
 var result = alphabetSoup("my string oh my");
 console.log(result) // "ghimmnorstyy"
 
-**/
-
+*/
 function alphabetSoup(str) {
-	//Your code here
-	
+ var me = str.split('');
+ var meSort = me.sort(); 
+ console.log(me.join('').trim()); 
+  
 }
+
+alphabetSoup("christina");
+alphabetSoup("michele");
+alphabetSoup("veasey"); 
+alphabetSoup("my string oh my");
