@@ -30,5 +30,25 @@ console.log(result) // "oH, hELLO!!"
 **/
 
 function swapCase(str) {
-	// Your code
-}
+	var array = str.split("");
+	var word = "";
+	for (var i = 0; i < array.length; i++) {
+	
+	   if (array[i] === array[i].toLowerCase()) { 
+		  word = word + array[i].toUpperCase();
+		 
+		} else { 
+		
+	   word = word + array[i].toLowerCase();
+		}
+	
+   } 
+		 return word;       
+  
+	  
+  }
+  
+  console.log(swapCase("HeLp"));
+  console.log(swapCase("chriStina"));
+  console.log(swapCase("MIChELE"));
+  console.log(swapCase("VeAsEy"));
